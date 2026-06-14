@@ -1,0 +1,159 @@
+/* Add Teacher only — scoped under .addTeacherShell */
+
+.addTeacherShell {
+  min-height: calc(100vh - 0px);
+  padding: 2rem 1.25rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    rgba(31, 31, 56, 0.07) 0%,
+    rgba(77, 181, 255, 0.09) 45%,
+    rgba(44, 44, 108, 0.06) 100%
+  );
+}
+
+.addTeacherShell .register {
+  height: auto;
+  min-height: unset;
+  width: 100%;
+  max-width: 34rem;
+}
+
+.addTeacherShell .registerForm {
+  margin-top: 0;
+  width: 100%;
+  padding: 2.25rem 2.5rem 2.75rem;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow:
+    0 18px 48px rgba(31, 31, 56, 0.14),
+    0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(44, 44, 108, 0.1);
+}
+
+.addTeacherShell .registerTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #1f1f38;
+  line-height: 1.15;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.addTeacherShell .registerForm > label:nth-of-type(1),
+.addTeacherShell .registerForm > label:nth-of-type(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c2c6c;
+  margin: 0.65rem 0 0.35rem;
+  padding: 0.65rem 0.9rem;
+  background: linear-gradient(
+    120deg,
+    rgba(77, 181, 255, 0.12) 0%,
+    rgba(44, 44, 108, 0.08) 100%
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(77, 181, 255, 0.22);
+}
+
+.addTeacherShell .registerForm > label:nth-of-type(1) {
+  margin-top: 1.25rem;
+}
+
+.addTeacherShell .registerForm > label:nth-of-type(3),
+.addTeacherShell .registerForm > label:nth-of-type(4),
+.addTeacherShell .registerForm > label:nth-of-type(5) {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f1f38;
+  margin: 1.15rem 0 0.45rem;
+}
+
+.addTeacherShell .registerInput {
+  padding: 14px 16px;
+  font-size: 1.125rem;
+  border-radius: 14px;
+  border: 1px solid rgba(31, 31, 56, 0.12);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.addTeacherShell .registerInput::placeholder {
+  font-size: 1.05rem;
+  color: rgba(31, 31, 56, 0.45);
+}
+
+.addTeacherShell .registerInput:focus {
+  border-color: rgba(77, 181, 255, 0.65);
+  box-shadow:
+    0 0 0 3px rgba(77, 181, 255, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.addTeacherShell .registerButton {
+  margin-top: 1.75rem;
+  padding: 14px 20px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1f1f38 0%, #2c2c6c 100%);
+  min-height: 52px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.addTeacherShell .registerButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2a2a4a 0%, #353580 100%);
+  box-shadow: 0 8px 24px rgba(31, 31, 56, 0.35);
+  filter: brightness(1.05);
+}
+
+.addTeacherShell .registerButton:disabled {
+  cursor: wait;
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 480px) {
+  .addTeacherShell {
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .addTeacherShell .registerForm {
+    padding: 1.75rem 1.35rem 2.25rem;
+    border-radius: 18px;
+  }
+
+  .addTeacherShell .registerTitle {
+    font-size: 1.85rem;
+  }
+
+  .addTeacherShell .registerForm > label:nth-of-type(1),
+  .addTeacherShell .registerForm > label:nth-of-type(2) {
+    font-size: 1.1rem;
+  }
+
+  .addTeacherShell .registerForm > label:nth-of-type(3),
+  .addTeacherShell .registerForm > label:nth-of-type(4),
+  .addTeacherShell .registerForm > label:nth-of-type(5) {
+    font-size: 1.05rem;
+  }
+
+  .addTeacherShell .registerInput {
+    font-size: 1.05rem;
+    padding: 14px 14px;
+  }
+
+  .addTeacherShell .registerButton {
+    font-size: 1.1rem;
+    padding: 16px 18px;
+  }
+}
